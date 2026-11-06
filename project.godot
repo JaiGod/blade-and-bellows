@@ -1,0 +1,41 @@
+; Engine configuration file.
+; Blade & Bellows - Godot 4.3 (Compatibility renderer)
+
+config_version=5
+
+[application]
+
+config/name="Blade & Bellows"
+config/description="Pixel-art blacksmith-shop RPG: forge weapons by hand, haggle with customers, arm adventurers and pay off a debt in 30 days."
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+boot_splash/bg_color=Color(0.09, 0.06, 0.06, 1)
+boot_splash/show_image=false
+config/icon="res://icon.svg"
+
+[autoload]
+
+Game="*res://scripts/game.gd"
+Sfx="*res://scripts/sfx.gd"
+
+[display]
+
+window/size/viewport_width=420
+window/size/viewport_height=420
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=6
+
+[input_devices]
+
+pointing/emulate_mouse_from_touch=true
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0.09, 0.06, 0.06, 1)
