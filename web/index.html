@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blade &amp; Bellows — Godot blacksmith-shop RPG</title>
+<meta name="description" content="Blade & Bellows: an original Godot 4 pixel-art blacksmith-shop RPG. Forge weapons by hand, haggle with customers, arm adventurers for 4 dungeons and pay off your debt in 30 days. Play free in your browser.">
+<link rel="icon" href="icon.svg">
+<style>
+:root{--bg:#140c0b;--panel:#24161299;--edge:#9a5a24;--fire:#ff9a3c;--gold:#ffcf5a;--ink:#f6e9d6;--dim:#bba58a}
+*{box-sizing:border-box}html,body{margin:0;overflow-x:hidden}
+body{background:radial-gradient(ellipse at 50% -10%,#5a2a14 0,#2a1410 38%,var(--bg) 70%);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--gold)}
+.wrap{max-width:1000px;margin:0 auto;padding:0 16px}
+header{text-align:center;padding:44px 0 26px}
+.logo{font:900 clamp(38px,10vw,80px)/1 Georgia,serif;letter-spacing:.04em;color:var(--gold);text-shadow:0 0 30px #ff7a2a88,4px 4px 0 #3b1a0a;margin:0}
+.sub{letter-spacing:.45em;color:#f3cfa0;margin:10px 0 16px;font-size:14px;text-transform:uppercase}
+.tag{color:var(--dim);max-width:660px;margin:0 auto 24px}
+.play{display:inline-block;background:linear-gradient(#ffd27a,#e0782a);color:#2a1206;font-weight:800;font-size:22px;padding:16px 38px;border-radius:10px;text-decoration:none;box-shadow:0 6px 0 #7a3a10,0 0 44px #ff8a3a66;transition:transform .1s}
+.play:hover{transform:translateY(-2px)}.play:active{transform:translateY(3px);box-shadow:0 3px 0 #7a3a10}
+.small{font-size:13px;color:var(--dim);margin-top:12px}
+.hero{margin:26px auto 0;max-width:840px}.hero img{width:100%;border:2px solid var(--edge);border-radius:10px;display:block;box-shadow:0 0 40px #ff7a2a33}
+h2{color:var(--gold);font:700 26px Georgia,serif;margin:44px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:#24161288;border:2px solid #4a2a1c;border-radius:8px;padding:14px 16px}
+.card b{color:var(--gold)}.card p{margin:6px 0 0;color:var(--dim);font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.steps div{background:#24161288;border-left:4px solid var(--fire);padding:10px 12px;border-radius:6px}
+.steps b{display:block;color:var(--ink)}.steps span{color:var(--dim);font-size:14px}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.shots img{width:100%;border:2px solid #4a2a1c;border-radius:8px;display:block}
+table{width:100%;border-collapse:collapse;font-size:14px}td{padding:6px 8px;border-bottom:1px solid #3e261c;vertical-align:top}td:first-child{color:var(--gold);white-space:nowrap}
+footer{text-align:center;color:var(--dim);padding:40px 0 50px;font-size:14px}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <h1 class="logo">BLADE &amp; BELLOWS</h1>
+  <div class="sub">a blacksmith-shop RPG</div>
+  <p class="tag">You've inherited your grandfather's forge in Emberfall and his 2,000-gold debt. Forge weapons by hand, haggle with picky customers, arm adventurers for the dungeons and out-smith your rival in 30 days. An original pixel-art RPG made in Godot 4.</p>
+  <a class="play" href="play/">&#9654; Play in browser</a>
+  <div class="small">Free · no install · mouse, keyboard or touch · progress saves automatically</div>
+  <div class="hero"><img src="docs/screenshots/forge_hammer.jpg" alt="Hammering a glowing blade on the anvil" onerror="this.onerror=null;this.src='shots/forge_hammer.jpg'"></div>
+</header>
+<main class="wrap">
+  <h2>Forge it yourself</h2>
+  <div class="steps">
+    <div><b>1 · Heat</b><span>Hold to pump the bellows until the metal glows the right colour for its ore. Too hot and it scorches.</span></div>
+    <div><b>2 · Hammer</b><span>Strike as the marker crosses the sweet spot. Perfect hits throw sparks; the metal cools as you work.</span></div>
+    <div><b>3 · Quench</b><span>Plunge the blade into the barrel as its glow fades into the window. Steam, hiss, done.</span></div>
+  </div>
+  <h2>Features</h2>
+  <div class="grid">
+    <div class="card"><b>6 weapons, 5 ores, 6 tiers</b><p>Daggers to greatswords in copper, iron, silver, mithril and starmetal, from Crude to Legendary. Four fittings change power and price.</p></div>
+    <div class="card"><b>Gem enchanting</b><p>Ruby flame, sapphire frost, emerald fortune, topaz haste and amethyst warding.</p></div>
+    <div class="card"><b>Haggling customers</b><p>Hagglers, nobles, veterans, apprentices, collectors and bards, each with a budget, a wish list and limited patience.</p></div>
+    <div class="card"><b>Adventurers &amp; 4 dungeons</b><p>Lend your weapons to adventurers. They return with gold, ore, gems, fame and stories, or never return at all.</p></div>
+    <div class="card"><b>Upgrades &amp; rivalry</b><p>Upgrade the forge, anvil and shop. Survive Vorn's price war, sabotage and two smithing contests.</p></div>
+    <div class="card"><b>30-day story</b><p>Rent every week, a debt due on day 30 and a champion who needs the finest blade in the land. Four endings.</p></div>
+  </div>
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="docs/screenshots/title.jpg" alt="Title screen" loading="lazy" onerror="this.onerror=null;this.src='shots/title.jpg'">
+    <img src="docs/screenshots/forge_heat.jpg" alt="Heating the metal" loading="lazy" onerror="this.onerror=null;this.src='shots/forge_heat.jpg'">
+    <img src="docs/screenshots/shop.jpg" alt="Haggling with a noble" loading="lazy" onerror="this.onerror=null;this.src='shots/shop.jpg'">
+    <img src="docs/screenshots/guild.jpg" alt="Adventurers' guild" loading="lazy" onerror="this.onerror=null;this.src='shots/guild.jpg'">
+  </div>
+  <h2>Controls</h2>
+  <table>
+    <tr><td>Pump bellows</td><td>Hold Space, the big button, or press and hold the scene</td></tr>
+    <tr><td>To the anvil</td><td>Enter or the "To the anvil" button</td></tr>
+    <tr><td>Strike / Quench</td><td>Space, tap or click</td></tr>
+    <tr><td>Menus</td><td>Mouse or touch</td></tr>
+    <tr><td>Pause</td><td>Esc or the Pause button</td></tr>
+  </table>
+</main>
+<footer class="wrap">
+  <a href="https://github.com/JaiGod/blade-and-bellows">Source on GitHub</a> · <a href="https://github.com/JaiGod">More JaiGod games</a><br>
+  Made by Jaineil Rana (JaKing) · part of <a href="https://github.com/JaiGod">JaiGod</a> · MIT License
+</footer>
+</body>
+</html>
